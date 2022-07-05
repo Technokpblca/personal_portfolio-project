@@ -1,1 +1,12 @@
 <h1>Hello blog</h1>
+
+
+{% for blog in blogs %}
+
+<h2>{{ blog.title }}</h2>
+<img src="{{ blog.image.url }}">
+<p>{{ blog.description }}</p>
+<h5>{{ blog.date }}</h5>
+
+
+{% endfor %}
